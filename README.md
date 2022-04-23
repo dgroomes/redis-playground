@@ -24,15 +24,23 @@ Follow these instructions to build and run the demo:
      brew install redis
      ```
 1. Start the Redis server:
-   * `redis-server --loglevel warning`
+   * ```shell
+     redis-server --loglevel warning
+     ```
 1. Connect to it from the Redis REPL (Read Eval Print Loop):
-   * `redis-cli`
+   * ```shell
+     redis-cli
+     ```
 1. Write some data using the REPL
-   * `LPUSH redis-playground "Hello from the redis-playground!"`
+   * ```redis-cli
+     LPUSH redis-playground "Hello from the redis-playground!"
+     ```
    * Instead of copy/pasting the command. Try writing it by hand. Notice how the REPL has a nice auto-suggestion
-	 and auto-completion user experience.   
+     and auto-completion user experience.   
 1. Read the data:
-   * `RPOP redis-playground`
+   * ```redis-cli
+     RPOP redis-playground
+     ```
 
 
 ## Reference
